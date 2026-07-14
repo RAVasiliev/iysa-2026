@@ -39,6 +39,7 @@
         </div>
         <div class="hero-bottomline">
           <span id="photoCount">61 PHOTOS</span>
+          <span id="likedCount">0 LIKED</span>
           <span>13 JULY 2026</span>
         </div>
       </header>
@@ -74,6 +75,16 @@
       </figure>
       <button class="lightbox-arrow lightbox-next" type="button" aria-label="Следующее фото">→</button>
       <div class="lightbox-counter" id="lightboxCounter"></div>
+      <div class="lightbox-tools" aria-label="Действия с фотографией">
+        <button class="like-button lightbox-like" id="lightboxLike" type="button" data-like-index="0" aria-pressed="false">
+          <span class="like-icon" aria-hidden="true">♡</span>
+          <span class="like-label">Нравится</span>
+        </button>
+        <a class="download-button lightbox-download" id="lightboxDownload" href="#" download>
+          <span aria-hidden="true">↓</span>
+          <span>Скачать</span>
+        </a>
+      </div>
     </div>
 
     <script src="script.js" defer></script>
