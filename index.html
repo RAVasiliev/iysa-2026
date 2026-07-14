@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0d0e11" />
+    <meta
+      name="description"
+      content="Фотографии IYSA 2026 — живой фотоархив события."
+    />
+    <title>IYSA 2026 — фотоархив</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="hero">
+        <div class="hero-topline">
+          <span class="eyebrow">PHOTO ARCHIVE · 2026</span>
+          <span class="status-dot"><i></i> live archive</span>
+        </div>
+        <div class="hero-content">
+          <div>
+            <h1>IYSA<br /><em>2026</em></h1>
+            <p class="intro">
+              Люди, моменты и немного живого хаоса.<br />
+              Просто листай и сохраняй то, что хочется оставить.
+            </p>
+          </div>
+          <div class="hero-note">
+            <span class="note-mark">↘</span>
+            <span>Листай ниже<br />и открывай фото крупно</span>
+          </div>
+        </div>
+        <div class="hero-bottomline">
+          <span id="photoCount">61 PHOTOS</span>
+          <span>13 JULY 2026</span>
+        </div>
+      </header>
+
+      <main>
+        <section class="gallery-heading" aria-labelledby="gallery-title">
+          <div>
+            <span class="section-index">01 / GALLERY</span>
+            <h2 id="gallery-title">Всё самое важное<br /><span>в одном месте.</span></h2>
+          </div>
+          <p class="gallery-hint">Нажми на фотографию,<br />чтобы открыть на весь экран</p>
+        </section>
+
+        <section id="gallery" class="gallery" aria-label="Фотографии IYSA 2026"></section>
+
+        <div id="emptyState" class="empty-state" hidden>
+          <p>Фотографии скоро появятся.</p>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <span>IYSA 2026</span>
+        <span>made to remember</span>
+      </footer>
+    </div>
+
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" type="button" aria-label="Закрыть">×</button>
+      <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Предыдущее фото">←</button>
+      <figure class="lightbox-figure">
+        <img id="lightboxImage" alt="" />
+        <figcaption id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox-arrow lightbox-next" type="button" aria-label="Следующее фото">→</button>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
