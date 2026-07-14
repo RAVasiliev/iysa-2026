@@ -34,6 +34,9 @@ button { font: inherit; }
   color: var(--muted); font-size: 11px; letter-spacing: .13em; text-transform: uppercase;
 }
 
+.hero-bottomline { gap: 18px; }
+.hero-bottomline span:first-child, .hero-bottomline span:nth-child(2) { color: var(--accent); }
+
 .hero-topline { border-bottom: 1px solid var(--line); padding-bottom: 18px; }
 .status-dot { display: inline-flex; align-items: center; gap: 8px; }
 .status-dot i { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 15px var(--accent); }
@@ -47,7 +50,6 @@ h1 em { color: var(--accent); font-style: normal; }
 .hero-note { display: flex; gap: 16px; align-items: flex-start; color: var(--accent-soft); font-size: 13px; line-height: 1.45; }
 .note-mark { font-size: 34px; line-height: .8; font-weight: 300; }
 .hero-bottomline { border-top: 1px solid var(--line); padding-top: 18px; }
-.hero-bottomline span:first-child { color: var(--accent); }
 
 main { padding-bottom: 120px; }
 .gallery-heading { display: flex; justify-content: space-between; gap: 32px; align-items: flex-end; padding: 90px 7vw 52px; }
@@ -65,6 +67,16 @@ h2 span { color: var(--muted); }
 .photo-card figcaption { position: absolute; z-index: 1; left: 14px; bottom: 12px; color: #fff; font-size: 11px; letter-spacing: .08em; opacity: 0; transform: translateY(6px); transition: all .3s ease; }
 .photo-card:hover figcaption { opacity: .9; transform: translateY(0); }
 
+.photo-actions { position: absolute; z-index: 2; top: 12px; right: 12px; display: flex; gap: 7px; opacity: 0; transform: translateY(-5px); transition: opacity .3s ease, transform .3s ease; }
+.photo-card:hover .photo-actions, .photo-card:focus-within .photo-actions { opacity: 1; transform: translateY(0); }
+.like-button, .download-button { display: inline-flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,.2); color: var(--text); background: rgba(13,14,17,.72); backdrop-filter: blur(10px); cursor: pointer; text-decoration: none; transition: color .2s ease, border-color .2s ease, background .2s ease, transform .2s ease; }
+.photo-actions .like-button, .photo-actions .download-button { width: 36px; height: 36px; }
+.like-button { padding: 0; }
+.like-icon { font-size: 20px; line-height: 1; }
+.like-button:hover, .download-button:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+.like-button.is-liked { color: var(--accent); border-color: rgba(244,180,95,.7); background: rgba(244,180,95,.13); }
+.card-download { font-size: 21px; line-height: 1; }
+
 .empty-state { padding: 80px 0; text-align: center; color: var(--muted); }
 .site-footer { border-top: 1px solid var(--line); padding: 22px 0 34px; }
 
@@ -81,6 +93,9 @@ h2 span { color: var(--muted); }
 .lightbox-close:hover, .lightbox-arrow:hover { color: var(--accent); }
 .lightbox-arrow:hover { transform: translateY(-50%) scale(1.12); }
 .lightbox-counter { position: absolute; left: 28px; bottom: 24px; color: var(--muted); font-size: 11px; letter-spacing: .1em; }
+.lightbox-tools { position: absolute; right: 28px; bottom: 18px; display: flex; gap: 8px; }
+.lightbox-tools .like-button, .lightbox-tools .download-button { min-height: 38px; gap: 8px; padding: 0 14px; border-radius: 999px; font-size: 12px; }
+.lightbox-tools .like-icon { font-size: 18px; }
 
 @media (max-width: 700px) {
   .site-shell { width: min(100% - 28px, 560px); }
@@ -92,10 +107,16 @@ h2 span { color: var(--muted); }
   .gallery { columns: 2 150px; column-gap: 8px; }
   .photo-card { margin-bottom: 8px; }
   .photo-card figcaption { display: none; }
+  .photo-actions { top: 8px; right: 8px; opacity: 1; transform: none; }
+  .photo-actions .like-button, .photo-actions .download-button { width: 32px; height: 32px; }
   .lightbox { padding: 28px 36px; }
   .lightbox-prev { left: 8px; }
   .lightbox-next { right: 8px; }
   .lightbox-close { right: 12px; }
+  .lightbox-counter { left: 14px; bottom: 24px; }
+  .lightbox-tools { right: 14px; bottom: 14px; }
+  .lightbox-tools .like-button, .lightbox-tools .download-button { min-height: 34px; padding: 0 11px; }
+  .lightbox-tools .like-label, .lightbox-tools .download-button span:last-child { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
