@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#0d0e11" />
     <meta
       name="description"
-      content="Фотографии IYSA 2026 — живой фотоархив события."
+      content="Фотографии IYSA 2026."
     />
     <title>IYSA 2026 — фотоархив</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,21 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=3" />
+    <link rel="stylesheet" href="styles.css?v=5" />
   </head>
   <body>
     <div class="site-shell">
       <header class="hero">
-        <div class="hero-topline">
-          <span class="eyebrow">PHOTO ARCHIVE · 2026</span>
-          <span class="status-dot"><i></i> live archive</span>
-        </div>
         <div class="hero-content">
           <div>
             <h1>IYSA<br /><em>2026</em></h1>
             <p class="intro">
-              Люди, моменты и немного живого хаоса.<br />
-              Лучшая команда аналитики — в работе и вне её.
+              Крутейшие люди, крутейшая аналитика,<br />
+              крутейшие путешествия!
             </p>
           </div>
           <div class="hero-note">
@@ -37,43 +33,13 @@
             <span>Листай ниже<br />и открывай фото крупно</span>
           </div>
         </div>
-        <div class="hero-bottomline">
-          <span id="photoCount">61 PHOTOS</span>
-          <span id="likedCount">0 LIKED</span>
-          <span>13 JULY 2026</span>
-        </div>
       </header>
 
       <main>
-        <section class="gallery-heading featured-heading" aria-labelledby="featured-title">
-          <div>
-            <span class="section-index">00 / FRESH MEMORIES</span>
-            <h2 id="featured-title">Лучшая команда аналитики<br /><span>вне рабочих чатов.</span></h2>
-          </div>
-          <p class="gallery-hint">Новые кадры уже здесь,<br />можно листать и улыбаться</p>
-        </section>
-
-        <section id="featuredGallery" class="gallery featured-gallery" aria-label="Новые фотографии и видео"></section>
-
-        <section class="gallery-heading" aria-labelledby="gallery-title">
-          <div>
-            <span class="section-index">01 / ARCHIVE</span>
-            <h2 id="gallery-title">Всё самое важное<br /><span>в одном месте.</span></h2>
-          </div>
-          <p class="gallery-hint">Нажми на фотографию,<br />чтобы открыть на весь экран</p>
-        </section>
-
         <section id="gallery" class="gallery" aria-label="Фотографии IYSA 2026"></section>
 
-        <div id="emptyState" class="empty-state" hidden>
-          <p>Фотографии скоро появятся.</p>
-        </div>
+        <div id="emptyState" class="empty-state" hidden aria-label="Фотографии скоро появятся"></div>
       </main>
-
-      <footer class="site-footer">
-        <span>IYSA 2026</span>
-        <span>made to remember</span>
-      </footer>
     </div>
 
     <div class="lightbox" id="lightbox" hidden>
@@ -81,23 +47,18 @@
       <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Предыдущее фото">←</button>
       <figure class="lightbox-figure">
         <img id="lightboxImage" alt="" />
-        <video id="lightboxVideo" controls playsinline preload="metadata" hidden></video>
-        <figcaption id="lightboxCaption"></figcaption>
       </figure>
       <button class="lightbox-arrow lightbox-next" type="button" aria-label="Следующее фото">→</button>
-      <div class="lightbox-counter" id="lightboxCounter"></div>
       <div class="lightbox-tools" aria-label="Действия с фотографией">
-        <button class="like-button lightbox-like" id="lightboxLike" type="button" data-like-index="0" aria-pressed="false">
+        <button class="like-button lightbox-like" id="lightboxLike" type="button" data-like-index="0" aria-pressed="false" aria-label="Поставить лайк">
           <span class="like-icon" aria-hidden="true">♡</span>
-          <span class="like-label">Нравится</span>
         </button>
-        <a class="download-button lightbox-download" id="lightboxDownload" href="#" download>
+        <a class="download-button lightbox-download" id="lightboxDownload" href="#" download aria-label="Скачать фотографию">
           <span aria-hidden="true">↓</span>
-          <span>Скачать</span>
         </a>
       </div>
     </div>
 
-    <script src="script.js?v=4" defer></script>
+    <script src="script.js?v=5" defer></script>
   </body>
 </html>

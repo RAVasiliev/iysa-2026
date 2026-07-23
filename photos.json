@@ -366,55 +366,45 @@
     "height": 960
   },
   {
-    "src": "photos/062.jpg",
+    "src": "062.jpg",
     "alt": "IYSA 2026 — команда вместе",
     "width": 1280,
     "height": 960,
     "featured": true
   },
   {
-    "src": "photos/063.jpg",
+    "src": "063.jpg",
     "alt": "IYSA 2026 — прогулка командой",
     "width": 1280,
     "height": 960,
     "featured": true
   },
   {
-    "src": "photos/064.jpg",
+    "src": "064.jpg",
     "alt": "IYSA 2026 — командный ужин",
     "width": 1280,
     "height": 960,
     "featured": true
   },
   {
-    "src": "photos/065.jpg",
+    "src": "065.jpg",
     "alt": "IYSA 2026 — вечер за одним столом",
     "width": 1280,
     "height": 960,
     "featured": true
   },
   {
-    "src": "photos/066.jpg",
+    "src": "066.jpg",
     "alt": "IYSA 2026 — разговоры после ужина",
     "width": 960,
     "height": 1280,
     "featured": true
   },
   {
-    "src": "photos/067.jpg",
+    "src": "067.jpg",
     "alt": "IYSA 2026 — любимая команда аналитики",
     "width": 1280,
     "height": 1233,
     "featured": true
-  },
-  {
-    "src": "photos/068.mp4",
-    "type": "video",
-    "poster": "photos/068-poster.jpg",
-    "alt": "IYSA 2026 — маленькое видео из поездки",
-    "width": 1280,
-    "height": 720,
-    "featured": true,
-    "downloadName": "IYSA-2026-video.mp4"
   }
 ]
