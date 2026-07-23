@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=2" />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body>
     <div class="site-shell">
@@ -29,7 +29,7 @@
             <h1>IYSA<br /><em>2026</em></h1>
             <p class="intro">
               Люди, моменты и немного живого хаоса.<br />
-              Просто листай и сохраняй то, что хочется оставить.
+              Лучшая команда аналитики — в работе и вне её.
             </p>
           </div>
           <div class="hero-note">
@@ -45,9 +45,19 @@
       </header>
 
       <main>
+        <section class="gallery-heading featured-heading" aria-labelledby="featured-title">
+          <div>
+            <span class="section-index">00 / FRESH MEMORIES</span>
+            <h2 id="featured-title">Лучшая команда аналитики<br /><span>вне рабочих чатов.</span></h2>
+          </div>
+          <p class="gallery-hint">Новые кадры уже здесь,<br />можно листать и улыбаться</p>
+        </section>
+
+        <section id="featuredGallery" class="gallery featured-gallery" aria-label="Новые фотографии и видео"></section>
+
         <section class="gallery-heading" aria-labelledby="gallery-title">
           <div>
-            <span class="section-index">01 / GALLERY</span>
+            <span class="section-index">01 / ARCHIVE</span>
             <h2 id="gallery-title">Всё самое важное<br /><span>в одном месте.</span></h2>
           </div>
           <p class="gallery-hint">Нажми на фотографию,<br />чтобы открыть на весь экран</p>
@@ -71,6 +81,7 @@
       <button class="lightbox-arrow lightbox-prev" type="button" aria-label="Предыдущее фото">←</button>
       <figure class="lightbox-figure">
         <img id="lightboxImage" alt="" />
+        <video id="lightboxVideo" controls playsinline preload="metadata" hidden></video>
         <figcaption id="lightboxCaption"></figcaption>
       </figure>
       <button class="lightbox-arrow lightbox-next" type="button" aria-label="Следующее фото">→</button>
@@ -87,6 +98,6 @@
       </div>
     </div>
 
-    <script src="script.js?v=2" defer></script>
+    <script src="script.js?v=3" defer></script>
   </body>
 </html>
