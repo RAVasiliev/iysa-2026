@@ -91,6 +91,7 @@ main { padding-bottom: 100px; }
   overflow: hidden;
   isolation: isolate;
   contain: layout paint;
+  aspect-ratio: 4 / 3;
   background: var(--surface);
   cursor: zoom-in;
 }
@@ -98,8 +99,7 @@ main { padding-bottom: 100px; }
 .photo-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
