@@ -184,7 +184,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowRight") showPhoto(activeIndex + 1);
 });
 
-fetch("photos.json")
+fetch("photos.json?v=4")
   .then((response) => {
     if (!response.ok) throw new Error("Photo manifest is unavailable");
     return response.json();
