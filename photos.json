@@ -45,7 +45,9 @@
     "src": "photos/008.webp",
     "alt": "IYSA 2026 — фото 08",
     "width": 720,
-    "height": 1280
+    "height": 1280,
+    "featured": true,
+    "featuredOrder": 2
   },
   {
     "src": "photos/009.webp",
@@ -111,7 +113,9 @@
     "src": "photos/019.webp",
     "alt": "IYSA 2026 — фото 19",
     "width": 1280,
-    "height": 960
+    "height": 960,
+    "featured": true,
+    "featuredOrder": 3
   },
   {
     "src": "photos/020.webp",
@@ -297,7 +301,9 @@
     "src": "photos/050.webp",
     "alt": "IYSA 2026 — фото 50",
     "width": 1280,
-    "height": 960
+    "height": 960,
+    "featured": true,
+    "featuredOrder": 1
   },
   {
     "src": "photos/051.webp",
@@ -406,5 +412,53 @@
     "width": 1280,
     "height": 1233,
     "featured": true
+  },
+  {
+    "src": "068.jpg",
+    "alt": "IYSA 2026 — фотобудка и общие воспоминания",
+    "width": 1280,
+    "height": 960,
+    "featured": true,
+    "featuredOrder": 4
+  },
+  {
+    "src": "069.jpg",
+    "alt": "IYSA 2026 — фото из фотобудки",
+    "width": 960,
+    "height": 1280,
+    "featured": true,
+    "featuredOrder": 5
+  },
+  {
+    "src": "070.jpg",
+    "alt": "IYSA 2026 — вечеринка в стиле Yandex AI",
+    "width": 960,
+    "height": 1280,
+    "featured": true,
+    "featuredOrder": 6
+  },
+  {
+    "src": "071.jpg",
+    "alt": "IYSA 2026 — вдвоём на вечеринке",
+    "width": 960,
+    "height": 1280,
+    "featured": true,
+    "featuredOrder": 7
+  },
+  {
+    "src": "072.jpg",
+    "alt": "IYSA 2026 — друзья в объективе",
+    "width": 960,
+    "height": 1280,
+    "featured": true,
+    "featuredOrder": 8
+  },
+  {
+    "src": "073.jpg",
+    "alt": "IYSA 2026 — вся команда в кадре",
+    "width": 960,
+    "height": 1280,
+    "featured": true,
+    "featuredOrder": 9
   }
 ]

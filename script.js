@@ -82,9 +82,13 @@ function mediaCardMarkup(media, index, isFeatured = false) {
 }
 
 function renderGallery() {
+  const displayOrder = ({ media, index }) => {
+    if (!media.featured) return 10000 + index;
+    return Number.isFinite(media.featuredOrder) ? media.featuredOrder : 1000 + index;
+  };
   const orderedPhotos = photos
     .map((media, index) => ({ media, index }))
-    .sort((a, b) => Number(Boolean(b.media.featured)) - Number(Boolean(a.media.featured)));
+    .sort((a, b) => displayOrder(a) - displayOrder(b));
 
   gallery.innerHTML = orderedPhotos
     .map(({ media, index }) => mediaCardMarkup(media, index, Boolean(media.featured)))
@@ -144,7 +148,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "ArrowRight") showPhoto(activeIndex + 1);
 });
 
-fetch("photos.json?v=5")
+fetch("photos.json?v=8")
   .then((response) => {
     if (!response.ok) throw new Error("Photo manifest is unavailable");
     return response.json();
