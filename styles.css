@@ -80,15 +80,15 @@ h1 em {
 main { padding-bottom: 100px; }
 
 .gallery {
-  columns: 3 280px;
-  column-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
 
 .photo-card {
   position: relative;
-  margin: 0 0 16px;
+  margin: 0;
   overflow: hidden;
-  break-inside: avoid;
   isolation: isolate;
   contain: layout paint;
   background: var(--surface);
@@ -98,7 +98,9 @@ main { padding-bottom: 100px; }
 .photo-card img {
   display: block;
   width: 100%;
+  aspect-ratio: 4 / 3;
   height: auto;
+  object-fit: cover;
 }
 
 .photo-actions {
@@ -257,11 +259,9 @@ main { padding-bottom: 100px; }
   .hero-note { margin-top: 42px; }
 
   .gallery {
-    columns: 2 150px;
-    column-gap: 8px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
   }
-
-  .photo-card { margin-bottom: 8px; }
 
   .photo-actions {
     top: 8px;
